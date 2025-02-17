@@ -487,10 +487,13 @@ def solicitar_analise_humana(usuario_id, historia_usuario, perfil_investimento):
 def pagina_sair():
     # Exibe a interface principal após o login
     # if st.button("Sair"):
-        st.session_state.autenticado = False
-        st.session_state.usuario = None
-        st.session_state.tela_registro = False  # Garante que volta para a tela de login
-        st.rerun()  # Reinicia o aplicativo
+    pagina_instrucoes()
+    #st.session_state.autenticado = False
+    #st.session_state.usuario = None
+    #st.session_state.tela_registro = False  # Garante que volta para a tela de login
+    #st.rerun()  # Reinicia o aplicativo
+    
+    
 
 
 def pagina_jornada_sair_dividas():
@@ -540,7 +543,9 @@ def main():
 
 # Executa a aplicação
 if __name__ == "__main__":
- main()
+    inicializar_banco_dados_usuarios()
+    main()
+
 
 
 # Executa a aplicação
