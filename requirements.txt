@@ -8,5 +8,6 @@ groq
 pandas
 matplotlib
 firebase-admin
+openpyxl
 
 
