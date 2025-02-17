@@ -194,7 +194,7 @@ def pagina_analise_psicologica():
 # Página de Jornada de Investimento
 def pagina_jornada_investimento():
     #st.title("Mezada 1.0")
-    st.title("Mesaca 1.0 - Jornada de Investimento e Gamificação")
+    st.title("Mezada 1.0 - Jornada de Investimento e Gamificação")
 
     # Identificação do usuário
     usuario_id = st.text_input("Digite seu ID de Usuário:", value="usuario123")
