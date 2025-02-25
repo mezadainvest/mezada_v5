@@ -167,7 +167,7 @@ def exibir_grafico_progresso(niveis_completos, niveis_totais):
 # Página de Análise Psicológica
 def pagina_analise_psicologica():
     #st.title("Mezada 1.0")
-    st.title("Mezada 1.0 - Análise Psicológica Financeira")
+    st.title("Mezada 1.0 - Análise Perfil Financeiro")
 
     # Recuperar resumos dos livros do banco de dados
     resumos_livros = recuperar_resumos_livros()
@@ -511,12 +511,12 @@ def pagina_jornada_sair_dividas():
 def main():
 
     st.sidebar.title("Menu")
-    opcao = st.sidebar.radio("Escolha uma opção:", ["Instruções","Análise Psicológica", "Jornada de Investimento",
+    opcao = st.sidebar.radio("Escolha uma opção:", ["Instruções","Análise de Perfil", "Jornada de Investimento",
                                                     "Jornada Sair das Dividas","Planilha de Orçamento", "Suporte","Upgrade de Assinatura", "Sair"])
 
     if opcao == "Instruções":
         pagina_instrucoes()
-    elif opcao == "Análise Psicológica":
+    elif opcao == "Análise de Perfil":
         pagina_analise_psicologica()
     elif opcao == "Jornada de Investimento":
         pagina_jornada_investimento()
